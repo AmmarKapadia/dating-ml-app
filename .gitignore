@@ -1,0 +1,33 @@
+# Virtual environment — never commit this, it'll be recreated from requirements.txt
+venv/
+.venv/
+env/
+
+# Python bytecode caches
+__pycache__/
+*.pyc
+*.pyo
+
+# Streamlit cache + session state
+.streamlit/secrets.toml
+
+# Jupyter notebook auto-saves
+.ipynb_checkpoints/
+
+# OS-level junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE / editor configs
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+
+# Optional: comment these two lines out if you DO want to commit the artifacts
+# (we will commit them so the deployed app works without re-running train.py)
+# artifacts/
+# *.pkl

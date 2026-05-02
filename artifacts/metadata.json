@@ -1,0 +1,308 @@
+{
+  "feature_names": [
+    "gender",
+    "sexual_orientation",
+    "location_type",
+    "app_usage_time_min",
+    "app_usage_time_label",
+    "swipe_right_ratio",
+    "swipe_right_label",
+    "likes_received",
+    "mutual_matches",
+    "profile_pics_count",
+    "bio_length",
+    "message_sent_count",
+    "emoji_usage_rate",
+    "last_active_hour",
+    "swipe_time_of_day",
+    "age",
+    "height_cm",
+    "weight_kg",
+    "zodiac_sign",
+    "body_type",
+    "Anime",
+    "Art",
+    "Astrology",
+    "Binge-Watching",
+    "Board Games",
+    "Cars",
+    "Clubbing",
+    "Coding",
+    "Cooking",
+    "Crafting",
+    "DIY",
+    "Dancing",
+    "Fashion",
+    "Fitness",
+    "Foodie",
+    "Gaming",
+    "Gardening",
+    "Hiking",
+    "History",
+    "Investing",
+    "K-pop",
+    "Languages",
+    "MMA",
+    "Makeup",
+    "Meditation",
+    "Memes",
+    "Motorcycling",
+    "Movies",
+    "Music",
+    "Painting",
+    "Parenting",
+    "Pets",
+    "Photography",
+    "Podcasts",
+    "Poetry",
+    "Politics",
+    "Reading",
+    "Running",
+    "Skating",
+    "Sneaker Culture",
+    "Social Activism",
+    "Spirituality",
+    "Stand-up Comedy",
+    "Startups",
+    "Tattoos",
+    "Tech",
+    "Traveling",
+    "Writing",
+    "Yoga",
+    "feat_income_high",
+    "feat_edu_high",
+    "feat_intent_high"
+  ],
+  "interest_columns": [
+    "Anime",
+    "Art",
+    "Astrology",
+    "Binge-Watching",
+    "Board Games",
+    "Cars",
+    "Clubbing",
+    "Coding",
+    "Cooking",
+    "Crafting",
+    "DIY",
+    "Dancing",
+    "Fashion",
+    "Fitness",
+    "Foodie",
+    "Gaming",
+    "Gardening",
+    "Hiking",
+    "History",
+    "Investing",
+    "K-pop",
+    "Languages",
+    "MMA",
+    "Makeup",
+    "Meditation",
+    "Memes",
+    "Motorcycling",
+    "Movies",
+    "Music",
+    "Painting",
+    "Parenting",
+    "Pets",
+    "Photography",
+    "Podcasts",
+    "Poetry",
+    "Politics",
+    "Reading",
+    "Running",
+    "Skating",
+    "Sneaker Culture",
+    "Social Activism",
+    "Spirituality",
+    "Stand-up Comedy",
+    "Startups",
+    "Tattoos",
+    "Tech",
+    "Traveling",
+    "Writing",
+    "Yoga"
+  ],
+  "categorical_encoded": [
+    "gender",
+    "sexual_orientation",
+    "location_type",
+    "app_usage_time_label",
+    "swipe_right_label",
+    "swipe_time_of_day",
+    "zodiac_sign",
+    "body_type"
+  ],
+  "engineered_features": [
+    "feat_income_high",
+    "feat_edu_high",
+    "feat_intent_high"
+  ],
+  "best_model": "Decision Tree",
+  "metrics": {
+    "Logistic Regression": {
+      "best_params": {
+        "C": 1.0
+      },
+      "accuracy": 0.4896725440806045,
+      "precision": 0.48972431077694234,
+      "recall": 0.49219143576826196,
+      "f1": 0.4909547738693467,
+      "confusion_matrix": [
+        [
+          1934,
+          2036
+        ],
+        [
+          2016,
+          1954
+        ]
+      ],
+      "cv_mean": 0.49852015113350123,
+      "cv_std": 0.007669704633604556,
+      "cv_scores": [
+        0.4839420654911839,
+        0.506139798488665,
+        0.5012594458438288,
+        0.4987405541561713,
+        0.5025188916876574
+      ]
+    },
+    "Decision Tree": {
+      "best_params": {
+        "max_depth": 20
+      },
+      "accuracy": 0.49798488664987406,
+      "precision": 0.49805163175840234,
+      "recall": 0.5151133501259446,
+      "f1": 0.5064388311045072,
+      "confusion_matrix": [
+        [
+          1909,
+          2061
+        ],
+        [
+          1925,
+          2045
+        ]
+      ],
+      "cv_mean": 0.5005037783375315,
+      "cv_std": 0.002920584036600816,
+      "cv_scores": [
+        0.5051952141057935,
+        0.49795340050377834,
+        0.4981108312342569,
+        0.502676322418136,
+        0.4985831234256927
+      ]
+    },
+    "Random Forest": {
+      "best_params": {
+        "max_depth": 10,
+        "n_estimators": 100
+      },
+      "accuracy": 0.49282115869017634,
+      "precision": 0.4926754047802621,
+      "recall": 0.48287153652392945,
+      "f1": 0.4877242081160158,
+      "confusion_matrix": [
+        [
+          1996,
+          1974
+        ],
+        [
+          2053,
+          1917
+        ]
+      ],
+      "cv_mean": 0.5040617128463476,
+      "cv_std": 0.0037126959629681672,
+      "cv_scores": [
+        0.49669395465994964,
+        0.5055100755667506,
+        0.5055100755667506,
+        0.5058249370277078,
+        0.5067695214105793
+      ]
+    },
+    "SVM": {
+      "best_params": {
+        "C": 1.0,
+        "kernel": "rbf"
+      },
+      "accuracy": 0.49042821158690175,
+      "precision": 0.49025141097998975,
+      "recall": 0.481360201511335,
+      "f1": 0.48576512455516013,
+      "confusion_matrix": [
+        [
+          1983,
+          1987
+        ],
+        [
+          2059,
+          1911
+        ]
+      ],
+      "cv_mean": 0.5078,
+      "cv_std": 0.004621688003316541,
+      "cv_scores": [
+        0.507,
+        0.516,
+        0.503,
+        0.509,
+        0.504
+      ]
+    },
+    "KNN": {
+      "best_params": {
+        "n_neighbors": 5
+      },
+      "accuracy": 0.4942065491183879,
+      "precision": 0.4940568475452196,
+      "recall": 0.48161209068010075,
+      "f1": 0.48775510204081635,
+      "confusion_matrix": [
+        [
+          2012,
+          1958
+        ],
+        [
+          2058,
+          1912
+        ]
+      ],
+      "cv_mean": 0.5028967254408061,
+      "cv_std": 0.0007877831236270014,
+      "cv_scores": [
+        0.503463476070529,
+        0.5036209068010076,
+        0.5031486146095718,
+        0.5014168765743073,
+        0.5028337531486146
+      ]
+    }
+  },
+  "class_distribution": {
+    "One-sided Like": 5112,
+    "Instant Match": 5078,
+    "Blocked": 5049,
+    "Catfished": 5025,
+    "Chat Ignored": 5019,
+    "Mutual Match": 4990,
+    "No Action": 4986,
+    "Ghosted": 4959,
+    "Date Happened": 4919,
+    "Relationship Formed": 4863
+  },
+  "n_train": 31760,
+  "n_test": 7940,
+  "random_state": 42,
+  "success_outcomes": [
+    "Relationship Formed",
+    "Date Happened",
+    "Mutual Match",
+    "Instant Match"
+  ]
+}
