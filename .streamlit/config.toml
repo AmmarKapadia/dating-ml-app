@@ -6,5 +6,10 @@ textColor = "#2E2A2E"
 font = "serif"
 
 [server]
-headless = false
+headless = true
 runOnSave = true
+enableCORS = false
+enableXsrfProtection = true
+
+[browser]
+gatherUsageStats = false
