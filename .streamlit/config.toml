@@ -7,9 +7,10 @@ font = "serif"
 
 [server]
 headless = true
-runOnSave = true
+runOnSave = false
 enableCORS = false
 enableXsrfProtection = true
+fileWatcherType = "none"
 
 [browser]
 gatherUsageStats = false
